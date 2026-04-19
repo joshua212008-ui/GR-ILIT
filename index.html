@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GRΛILIT Telegraph</title>
+    <meta name="description" content="A Newspaper style clothing store.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========================================== -->
+    <!-- オープニング画面 (Splash Screen)           -->
+    <!-- ※文字の変更は js/data.js で行えます。   -->
+    <!-- ========================================== -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="splash-stars">★ ★ ★ ★ ★</div>
+            <div class="splash-badge-text">TRADEMARK</div>
+            <h1 class="splash-logo" data-i18n="title">GRΛILIT</h1>
+            <div class="splash-divider">
+                <span class="divider-line"></span>
+                <span class="divider-text">DEPT. OF VINTAGE</span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="splash-tagline" data-i18n="splashTagline">AUTHENTIC VINTAGE GEAR</div>
+            <div class="splash-seal">U.S.A</div>
+        </div>
+        <div class="splash-lines"></div>
+    </div>
+
+    <div class="page-container">
+        <!-- Modern E-commerce Header -->
+        <header class="shop-header">
+            <div class="header-left">
+                <h1 class="shop-logo" data-i18n="title">GRΛILIT</h1>
+            </div>
+            
+            <div class="header-right">
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ja">JP</button>
+                    <button class="lang-btn" data-lang="ko">KR</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========================================== -->
+        <!-- メイン画面 (Main Content)                  -->
+        <!-- ========================================== -->
+        <main class="shop-main">
+            <div class="category-nav">
+                <button class="cat-icon active" data-category="All" title="All">
+                    <span class="icon-text">ALL</span>
+                </button>
+                <button class="cat-icon" data-category="Cap" title="Hats & Caps">
+                    <span class="icon-text">CAP</span>
+                </button>
+                <button class="cat-icon" data-category="Outer" title="Outerwear">
+                    <span class="icon-text">OUTER</span>
+                </button>
+                <button class="cat-icon" data-category="Top" title="Tops & Tees">
+                    <span class="icon-text">TOPS</span>
+                </button>
+                <button class="cat-icon" data-category="Pants" title="Bottoms">
+                    <span class="icon-text">PANTS</span>
+                </button>
+                <button class="cat-icon" data-category="Shoes" title="Footwear">
+                    <span class="icon-text">SHOES</span>
+                </button>
+                <button class="cat-icon" data-category="Accessory" title="Accessories">
+                    <span class="icon-text">ACC.</span>
+                </button>
+            </div>
+
+        <!-- ========================================== -->
+        <!-- 商品一覧がここに自動で表示されます         -->
+        <!-- ※商品は js/data.js で編集してください     -->
+        <!-- ========================================== -->
+        <div id="product-grid" class="articles-container"></div>
+    </main>
+    </div> <!-- /page-container -->
+
+    <!-- No cart needed for BASE integration -->
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

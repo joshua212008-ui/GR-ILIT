@@ -1,0 +1,8 @@
+{
+  "name": "grailit-store",
+  "version": "1.0.0",
+  "description": "GRΛILIT Vintage Store",
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
